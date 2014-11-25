@@ -3,11 +3,5 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'PhotoGallery' do
-
-end
-
-target 'PhotoGalleryTests' do
-
-end
+pod 'SDWebImage', '~> 3.7'
 
