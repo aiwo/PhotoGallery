@@ -14,6 +14,11 @@
 		DAB889171A2518BB00A7154E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB889161A2518BB00A7154E /* Images.xcassets */; };
 		DAB8891A1A2518BB00A7154E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB889181A2518BB00A7154E /* LaunchScreen.xib */; };
 		DAB889261A2518BB00A7154E /* PhotoGalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB889251A2518BB00A7154E /* PhotoGalleryTests.m */; };
+		DAB889311A251A8F00A7154E /* GalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB889301A251A8F00A7154E /* GalleryController.m */; };
+		DAB889341A251ABA00A7154E /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB889331A251ABA00A7154E /* Router.m */; };
+		DAB889371A251EB900A7154E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB889361A251EB900A7154E /* NavigationController.m */; };
+		DAB889391A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB889381A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf */; };
+		DAB8893C1A2520EE00A7154E /* UIFont+MeduzaFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8893B1A2520EE00A7154E /* UIFont+MeduzaFonts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		DAB8891F1A2518BB00A7154E /* PhotoGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB889241A2518BB00A7154E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB889251A2518BB00A7154E /* PhotoGalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoGalleryTests.m; sourceTree = "<group>"; };
+		DAB8892F1A251A8F00A7154E /* GalleryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryController.h; sourceTree = "<group>"; };
+		DAB889301A251A8F00A7154E /* GalleryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryController.m; sourceTree = "<group>"; };
+		DAB889321A251ABA00A7154E /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		DAB889331A251ABA00A7154E /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		DAB889351A251EB900A7154E /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		DAB889361A251EB900A7154E /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		DAB889381A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PFRegalTextPro-RegularB_35471.ttf"; sourceTree = "<group>"; };
+		DAB8893A1A2520EE00A7154E /* UIFont+MeduzaFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+MeduzaFonts.h"; sourceTree = "<group>"; };
+		DAB8893B1A2520EE00A7154E /* UIFont+MeduzaFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MeduzaFonts.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +97,20 @@
 			children = (
 				DAB8890D1A2518BB00A7154E /* AppDelegate.h */,
 				DAB8890E1A2518BB00A7154E /* AppDelegate.m */,
-				DAB889101A2518BB00A7154E /* ViewController.h */,
-				DAB889111A2518BB00A7154E /* ViewController.m */,
-				DAB889131A2518BB00A7154E /* Main.storyboard */,
+				DAB8892F1A251A8F00A7154E /* GalleryController.h */,
+				DAB889301A251A8F00A7154E /* GalleryController.m */,
 				DAB889161A2518BB00A7154E /* Images.xcassets */,
 				DAB889181A2518BB00A7154E /* LaunchScreen.xib */,
+				DAB889131A2518BB00A7154E /* Main.storyboard */,
 				DAB889091A2518BB00A7154E /* Supporting Files */,
+				DAB889101A2518BB00A7154E /* ViewController.h */,
+				DAB889111A2518BB00A7154E /* ViewController.m */,
+				DAB889321A251ABA00A7154E /* Router.h */,
+				DAB889331A251ABA00A7154E /* Router.m */,
+				DAB889351A251EB900A7154E /* NavigationController.h */,
+				DAB889361A251EB900A7154E /* NavigationController.m */,
+				DAB8893A1A2520EE00A7154E /* UIFont+MeduzaFonts.h */,
+				DAB8893B1A2520EE00A7154E /* UIFont+MeduzaFonts.m */,
 			);
 			path = PhotoGallery;
 			sourceTree = "<group>";
@@ -96,6 +118,7 @@
 		DAB889091A2518BB00A7154E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DAB889381A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf */,
 				DAB8890A1A2518BB00A7154E /* Info.plist */,
 				DAB8890B1A2518BB00A7154E /* main.m */,
 			);
@@ -199,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB889391A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf in Resources */,
 				DAB889151A2518BB00A7154E /* Main.storyboard in Resources */,
 				DAB8891A1A2518BB00A7154E /* LaunchScreen.xib in Resources */,
 				DAB889171A2518BB00A7154E /* Images.xcassets in Resources */,
@@ -219,9 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB8893C1A2520EE00A7154E /* UIFont+MeduzaFonts.m in Sources */,
 				DAB889121A2518BB00A7154E /* ViewController.m in Sources */,
 				DAB8890F1A2518BB00A7154E /* AppDelegate.m in Sources */,
+				DAB889311A251A8F00A7154E /* GalleryController.m in Sources */,
+				DAB889371A251EB900A7154E /* NavigationController.m in Sources */,
 				DAB8890C1A2518BB00A7154E /* main.m in Sources */,
+				DAB889341A251ABA00A7154E /* Router.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PhotoGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PhotoGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
