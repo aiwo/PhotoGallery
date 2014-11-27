@@ -19,6 +19,9 @@
 		DAB889371A251EB900A7154E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB889361A251EB900A7154E /* NavigationController.m */; };
 		DAB889391A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB889381A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf */; };
 		DAB8893C1A2520EE00A7154E /* UIFont+MeduzaFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8893B1A2520EE00A7154E /* UIFont+MeduzaFonts.m */; };
+		DAB8894C1A2536AA00A7154E /* ZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8894B1A2536AA00A7154E /* ZoomableImageView.m */; };
+		DAB8894F1A2536FA00A7154E /* ZoomableScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8894E1A2536FA00A7154E /* ZoomableScrollView.m */; };
+		DAB889531A26E6FD00A7154E /* ZoomableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB889521A26E6FD00A7154E /* ZoomableImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,11 @@
 		DAB889381A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PFRegalTextPro-RegularB_35471.ttf"; sourceTree = "<group>"; };
 		DAB8893A1A2520EE00A7154E /* UIFont+MeduzaFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+MeduzaFonts.h"; sourceTree = "<group>"; };
 		DAB8893B1A2520EE00A7154E /* UIFont+MeduzaFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MeduzaFonts.m"; sourceTree = "<group>"; };
+		DAB8894A1A2536AA00A7154E /* ZoomableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomableImageView.h; sourceTree = "<group>"; };
+		DAB8894B1A2536AA00A7154E /* ZoomableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomableImageView.m; sourceTree = "<group>"; };
+		DAB8894D1A2536FA00A7154E /* ZoomableScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomableScrollView.h; sourceTree = "<group>"; };
+		DAB8894E1A2536FA00A7154E /* ZoomableScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomableScrollView.m; sourceTree = "<group>"; };
+		DAB889521A26E6FD00A7154E /* ZoomableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomableImageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,20 +106,16 @@
 			children = (
 				DAB8890D1A2518BB00A7154E /* AppDelegate.h */,
 				DAB8890E1A2518BB00A7154E /* AppDelegate.m */,
-				DAB8892F1A251A8F00A7154E /* GalleryController.h */,
-				DAB889301A251A8F00A7154E /* GalleryController.m */,
+				DAB889501A2669EB00A7154E /* Controllers */,
 				DAB889161A2518BB00A7154E /* Images.xcassets */,
 				DAB889181A2518BB00A7154E /* LaunchScreen.xib */,
 				DAB889131A2518BB00A7154E /* Main.storyboard */,
 				DAB889091A2518BB00A7154E /* Supporting Files */,
-				DAB889101A2518BB00A7154E /* ViewController.h */,
-				DAB889111A2518BB00A7154E /* ViewController.m */,
 				DAB889321A251ABA00A7154E /* Router.h */,
 				DAB889331A251ABA00A7154E /* Router.m */,
-				DAB889351A251EB900A7154E /* NavigationController.h */,
-				DAB889361A251EB900A7154E /* NavigationController.m */,
 				DAB8893A1A2520EE00A7154E /* UIFont+MeduzaFonts.h */,
 				DAB8893B1A2520EE00A7154E /* UIFont+MeduzaFonts.m */,
+				DAB889511A2669F800A7154E /* Views */,
 			);
 			path = PhotoGallery;
 			sourceTree = "<group>";
@@ -124,6 +128,31 @@
 				DAB8890B1A2518BB00A7154E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAB889501A2669EB00A7154E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8892F1A251A8F00A7154E /* GalleryController.h */,
+				DAB889301A251A8F00A7154E /* GalleryController.m */,
+				DAB889101A2518BB00A7154E /* ViewController.h */,
+				DAB889111A2518BB00A7154E /* ViewController.m */,
+				DAB889351A251EB900A7154E /* NavigationController.h */,
+				DAB889361A251EB900A7154E /* NavigationController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DAB889511A2669F800A7154E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8894A1A2536AA00A7154E /* ZoomableImageView.h */,
+				DAB8894B1A2536AA00A7154E /* ZoomableImageView.m */,
+				DAB8894D1A2536FA00A7154E /* ZoomableScrollView.h */,
+				DAB8894E1A2536FA00A7154E /* ZoomableScrollView.m */,
+				DAB889521A26E6FD00A7154E /* ZoomableImageView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB889391A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf in Resources */,
+				DAB889531A26E6FD00A7154E /* ZoomableImageView.xib in Resources */,
 				DAB889151A2518BB00A7154E /* Main.storyboard in Resources */,
 				DAB8891A1A2518BB00A7154E /* LaunchScreen.xib in Resources */,
 				DAB889171A2518BB00A7154E /* Images.xcassets in Resources */,
@@ -232,11 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB8894F1A2536FA00A7154E /* ZoomableScrollView.m in Sources */,
 				DAB8893C1A2520EE00A7154E /* UIFont+MeduzaFonts.m in Sources */,
 				DAB889121A2518BB00A7154E /* ViewController.m in Sources */,
 				DAB8890F1A2518BB00A7154E /* AppDelegate.m in Sources */,
 				DAB889311A251A8F00A7154E /* GalleryController.m in Sources */,
 				DAB889371A251EB900A7154E /* NavigationController.m in Sources */,
+				DAB8894C1A2536AA00A7154E /* ZoomableImageView.m in Sources */,
 				DAB8890C1A2518BB00A7154E /* main.m in Sources */,
 				DAB889341A251ABA00A7154E /* Router.m in Sources */,
 			);

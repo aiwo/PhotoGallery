@@ -33,18 +33,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="dfD-Wh-aGb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="openGalleryButton" destination="Wcs-nB-bNT" id="z7q-bP-zOC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1125" y="345"/>
         </scene>
-        <!--View Controller-->
+        <!--Gallery Controller-->
         <scene sceneID="Qyo-zE-F7l">
             <objects>
-                <viewController id="Ngz-cz-whV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GalleryController" id="Ngz-cz-whV" customClass="GalleryController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ciu-hx-Ze7"/>
                         <viewControllerLayoutGuide type="bottom" id="7RG-wG-gNH"/>
@@ -52,9 +49,24 @@
                     <view key="view" contentMode="scaleToFill" id="6uS-NM-aDL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wI-7J-S6F">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0wI-7J-S6F" firstAttribute="leading" secondItem="6uS-NM-aDL" secondAttribute="leading" id="1ba-ur-fYc"/>
+                            <constraint firstItem="0wI-7J-S6F" firstAttribute="top" secondItem="6uS-NM-aDL" secondAttribute="top" id="O3n-se-fb3"/>
+                            <constraint firstAttribute="trailing" secondItem="0wI-7J-S6F" secondAttribute="trailing" id="eaj-aS-bxK"/>
+                            <constraint firstItem="7RG-wG-gNH" firstAttribute="top" secondItem="0wI-7J-S6F" secondAttribute="bottom" id="rJg-5I-fJv"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scrollView" destination="0wI-7J-S6F" id="HBF-T3-Bpv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTz-jF-Dzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

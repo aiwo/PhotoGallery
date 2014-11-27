@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "Router.h"
+#import <FSBasicImage.h>
+#import <FSBasicImageSource.h>
+
 
 @interface ViewController ()
 
@@ -33,6 +36,15 @@
                         @"http://friends.kz/uploads/posts/2011-10/1320076623_animals_022.jpg",
                         @"http://img.xcitefun.net/users/2011/06/255682,xcitefun-a-cute-hq-23.jpg",
                         @"http://www.aegmaha.ee/files/200807/images/large/vJxzYlmhSsa.jpg"];
+    
+//    FSBasicImage *firstPhoto = [[FSBasicImage alloc] initWithImageURL:[NSURL URLWithString:photos[0]] name:nil];
+//    FSBasicImage *secondPhoto = [[FSBasicImage alloc] initWithImageURL:[NSURL URLWithString:photos[1]] name:nil];
+//    
+//    FSBasicImageSource *photoSource = [[FSBasicImageSource alloc] initWithImages:@[firstPhoto, secondPhoto]];
+//    
+//    FSImageViewerViewController *imageViewController = [[FSImageViewerViewController alloc] initWithImageSource:photoSource];
+//    [self.navigationController pushViewController:imageViewController animated:YES];
+    
     
     UIViewController *controller = [Router instantiateGalleryControllerWithPhotos:photos];
     [self.navigationController pushViewController:controller animated:YES];

@@ -3,5 +3,8 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'SDWebImage', '~> 3.7'
+pod 'SDWebImage'
+pod 'CocoaLumberjack'
+pod 'Masonry'
+pod 'FSImageViewer', '~> 2.6'
 
