@@ -42,7 +42,7 @@
     }];
     
     [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
+    [self.view insertSubview:self.pageViewController.view atIndex:0];
     [self.pageViewController didMoveToParentViewController:self];
     
     [self configureSignals];
@@ -60,14 +60,15 @@
     __weak typeof(self) weakSelf = self;
     
     RAC(self, photoIndexLabel.text) = [RACObserve(self, currentPhotoIndex) map:^id(NSNumber *value) {
-        return [NSString stringWithFormat:@"%i/%i", value.integerValue + 1, weakSelf.photos.count];
+        return [NSString stringWithFormat:@"%i/%lu", value.integerValue + 1, (unsigned long)weakSelf.photos.count];
     }];
     
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIDeviceOrientationDidChangeNotification object:0] subscribeNext:^(id x) {
         [UIView animateWithDuration:0.3f animations:^{
+            BOOL showButtons = [UIDevice currentDevice].orientation == UIDeviceOrientationPortrait;
             self.closeButton.alpha =
             self.shareButton.alpha =
-            self.photoIndexLabel.alpha = UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation);
+            self.photoIndexLabel.alpha = showButtons;
         }];
     }];
 }

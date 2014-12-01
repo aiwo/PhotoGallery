@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 aiwo. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RootViewController.h"
 #import "Router.h"
 #import "UIFont+MeduzaFonts.h"
 #import "PageViewController.h"
 
-@interface ViewController ()
+@interface RootViewController ()
 
 @end
 
-@implementation ViewController
+@implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
