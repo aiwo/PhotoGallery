@@ -10,7 +10,8 @@
 #import "Router.h"
 #import <FSBasicImage.h>
 #import <FSBasicImageSource.h>
-
+#import "UIFont+MeduzaFonts.h"
+#import "PageViewController.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,22 +32,16 @@
     NSArray *photos = @[@"http://sakha.gov.ru/sites/default/files/story/img/2013_02/99/_%D0%97%D0%98%D0%9C%D0%9E%D0%99.jpg",
                         @"http://friends.kz/uploads/posts/2011-10/1320076437_animals_006.jpg",
                         @"http://www.motorfoto.ru/0/6/98/69809.jpg",
-                        @"http://img1.liveinternet.ru/images/attach/c/8/100/160/100160597_large_831526012.jpg",
+                        @"http://img.kudika.ro/comunitate/photos/7/4/3/6873471.jpg",
                         @"http://friends.kz/uploads/posts/2011-10/1320076623_animals_022.jpg",
                         @"http://img.xcitefun.net/users/2011/06/255682,xcitefun-a-cute-hq-23.jpg",
                         @"http://www.aegmaha.ee/files/200807/images/large/vJxzYlmhSsa.jpg"];
     
-//    FSBasicImage *firstPhoto = [[FSBasicImage alloc] initWithImageURL:[NSURL URLWithString:photos[0]] name:nil];
-//    FSBasicImage *secondPhoto = [[FSBasicImage alloc] initWithImageURL:[NSURL URLWithString:photos[1]] name:nil];
-//    
-//    FSBasicImageSource *photoSource = [[FSBasicImageSource alloc] initWithImages:@[firstPhoto, secondPhoto]];
-//    
-//    FSImageViewerViewController *imageViewController = [[FSImageViewerViewController alloc] initWithImageSource:photoSource];
-//    [self.navigationController pushViewController:imageViewController animated:YES];
-    
-    
     UIViewController *controller = [Router instantiateGalleryControllerWithPhotos:photos];
-    [self.navigationController pushViewController:controller animated:YES];
+    PageViewController *pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PageViewController class])];
+    pageViewController.photos = photos;
+    [self.navigationController pushViewController:pageViewController animated:YES];
+//    [self.navigationController presentViewController:pageViewController animated:YES completion:nil];
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const kDeviceWillChangeOrientatoinNotification;
+
 @interface GalleryController : UIViewController
 
 @property (nonatomic, strong) NSArray *photos;

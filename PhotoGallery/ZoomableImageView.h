@@ -12,6 +12,4 @@
 
 @property (nonatomic, strong) NSURL *photoUrl;
 
-- (id)initWithPhotoUrl:(NSURL *)photoUrl;
-
 @end

@@ -20,8 +20,9 @@
 		DAB889391A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB889381A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf */; };
 		DAB8893C1A2520EE00A7154E /* UIFont+MeduzaFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8893B1A2520EE00A7154E /* UIFont+MeduzaFonts.m */; };
 		DAB8894C1A2536AA00A7154E /* ZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8894B1A2536AA00A7154E /* ZoomableImageView.m */; };
-		DAB8894F1A2536FA00A7154E /* ZoomableScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8894E1A2536FA00A7154E /* ZoomableScrollView.m */; };
-		DAB889531A26E6FD00A7154E /* ZoomableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB889521A26E6FD00A7154E /* ZoomableImageView.xib */; };
+		DAD07B761A2BA48600334677 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD07B751A2BA48600334677 /* MyScrollView.m */; };
+		DAD07B791A2BB6A300334677 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD07B781A2BB6A300334677 /* PageViewController.m */; };
+		DAD07B7C1A2BB6BC00334677 /* ZoomableImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD07B7B1A2BB6BC00334677 /* ZoomableImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +50,12 @@
 		DAB8893B1A2520EE00A7154E /* UIFont+MeduzaFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MeduzaFonts.m"; sourceTree = "<group>"; };
 		DAB8894A1A2536AA00A7154E /* ZoomableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomableImageView.h; sourceTree = "<group>"; };
 		DAB8894B1A2536AA00A7154E /* ZoomableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomableImageView.m; sourceTree = "<group>"; };
-		DAB8894D1A2536FA00A7154E /* ZoomableScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomableScrollView.h; sourceTree = "<group>"; };
-		DAB8894E1A2536FA00A7154E /* ZoomableScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomableScrollView.m; sourceTree = "<group>"; };
-		DAB889521A26E6FD00A7154E /* ZoomableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomableImageView.xib; sourceTree = "<group>"; };
+		DAD07B741A2BA48600334677 /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		DAD07B751A2BA48600334677 /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
+		DAD07B771A2BB6A300334677 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		DAD07B781A2BB6A300334677 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		DAD07B7A1A2BB6BC00334677 /* ZoomableImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomableImageViewController.h; sourceTree = "<group>"; };
+		DAD07B7B1A2BB6BC00334677 /* ZoomableImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomableImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,10 @@
 				DAB889111A2518BB00A7154E /* ViewController.m */,
 				DAB889351A251EB900A7154E /* NavigationController.h */,
 				DAB889361A251EB900A7154E /* NavigationController.m */,
+				DAD07B771A2BB6A300334677 /* PageViewController.h */,
+				DAD07B781A2BB6A300334677 /* PageViewController.m */,
+				DAD07B7A1A2BB6BC00334677 /* ZoomableImageViewController.h */,
+				DAD07B7B1A2BB6BC00334677 /* ZoomableImageViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -148,9 +156,8 @@
 			children = (
 				DAB8894A1A2536AA00A7154E /* ZoomableImageView.h */,
 				DAB8894B1A2536AA00A7154E /* ZoomableImageView.m */,
-				DAB8894D1A2536FA00A7154E /* ZoomableScrollView.h */,
-				DAB8894E1A2536FA00A7154E /* ZoomableScrollView.m */,
-				DAB889521A26E6FD00A7154E /* ZoomableImageView.xib */,
+				DAD07B741A2BA48600334677 /* MyScrollView.h */,
+				DAD07B751A2BA48600334677 /* MyScrollView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -215,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB889391A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf in Resources */,
-				DAB889531A26E6FD00A7154E /* ZoomableImageView.xib in Resources */,
 				DAB889151A2518BB00A7154E /* Main.storyboard in Resources */,
 				DAB8891A1A2518BB00A7154E /* LaunchScreen.xib in Resources */,
 				DAB889171A2518BB00A7154E /* Images.xcassets in Resources */,
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB8894F1A2536FA00A7154E /* ZoomableScrollView.m in Sources */,
+				DAD07B7C1A2BB6BC00334677 /* ZoomableImageViewController.m in Sources */,
 				DAB8893C1A2520EE00A7154E /* UIFont+MeduzaFonts.m in Sources */,
 				DAB889121A2518BB00A7154E /* ViewController.m in Sources */,
+				DAD07B761A2BA48600334677 /* MyScrollView.m in Sources */,
+				DAD07B791A2BB6A300334677 /* PageViewController.m in Sources */,
 				DAB8890F1A2518BB00A7154E /* AppDelegate.m in Sources */,
 				DAB889311A251A8F00A7154E /* GalleryController.m in Sources */,
 				DAB889371A251EB900A7154E /* NavigationController.m in Sources */,

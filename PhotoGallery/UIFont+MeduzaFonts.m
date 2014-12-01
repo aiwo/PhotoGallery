@@ -15,7 +15,7 @@
     static NSDictionary *map;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        map = @{@(MeduzaFontStyleRegular40pt)   :   [UIFont systemFontOfSize:20.]
+        map = @{@(MeduzaFontStyleRegular40pt)   :   [UIFont fontWithName:@"PFRegalTextPro-RegularB" size:20.]
                 };
     });
     
