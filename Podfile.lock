@@ -1,34 +1,9 @@
 PODS:
-  - AFNetworking (2.5.0):
-    - AFNetworking/NSURLConnection (= 2.5.0)
-    - AFNetworking/NSURLSession (= 2.5.0)
-    - AFNetworking/Reachability (= 2.5.0)
-    - AFNetworking/Security (= 2.5.0)
-    - AFNetworking/Serialization (= 2.5.0)
-    - AFNetworking/UIKit (= 2.5.0)
-  - AFNetworking/NSURLConnection (2.5.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.0)
-  - AFNetworking/Security (2.5.0)
-  - AFNetworking/Serialization (2.5.0)
-  - AFNetworking/UIKit (2.5.0):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
   - CocoaLumberjack (1.9.2):
     - CocoaLumberjack/Extensions (= 1.9.2)
   - CocoaLumberjack/Core (1.9.2)
   - CocoaLumberjack/Extensions (1.9.2):
     - CocoaLumberjack/Core
-  - EGOCache (2.1)
-  - FSImageViewer (2.6.3):
-    - AFNetworking (~> 2.2)
-    - EGOCache (~> 2.0)
   - Masonry (0.5.3)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI (= 2.3.1)
@@ -40,24 +15,17 @@ PODS:
   - SDWebImage (3.7.1):
     - SDWebImage/Core (= 3.7.1)
   - SDWebImage/Core (3.7.1)
-  - UIView+TKGeometry (0.2)
 
 DEPENDENCIES:
   - CocoaLumberjack
-  - FSImageViewer (~> 2.6)
   - Masonry
   - ReactiveCocoa
   - SDWebImage
-  - UIView+TKGeometry (~> 0.2)
 
 SPEC CHECKSUMS:
-  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
   CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
-  EGOCache: bf414333c425fe47f5182351d1dd47ebf72d8352
-  FSImageViewer: 9275b6a1d0c5555182dc829fd88037c7a6a6a493
   Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
   SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
-  UIView+TKGeometry: 60a88dcf2af8420175cb1c789a02d6254ebb89a7
 
 COCOAPODS: 0.35.0

@@ -10,8 +10,6 @@
 #import <UIImageView+WebCache.h>
 #import <Masonry.h>
 #import <ReactiveCocoa.h>
-#import <UIView+TKGeometry.h>
-#import "GalleryController.h"
 
 @interface ZoomableImageView () <UIScrollViewDelegate>
 
@@ -34,13 +32,6 @@
     
     UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinch:)];
     [self.scrollView addGestureRecognizer:pinchRecognizer];
-    
-    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:kDeviceWillChangeOrientatoinNotification object:0] subscribeNext:^(NSNotification *notification) {
-        CGFloat duration = [notification.object floatValue];
-        [UIView animateWithDuration:duration animations:^{
-            self.scrollView.zoomScale = 1.f;
-        }];
-    }];
 }
 
 - (void)setPhotoUrl:(NSURL *)photoUrl
@@ -73,10 +64,8 @@
 
 #pragma mark - Handle Gestures
 
-static CGFloat maxZoomScale = 3.f;
-
 - (void)handleDoubleTap:(UITapGestureRecognizer *)recognizer
-{   CGFloat zoomScale = self.scrollView.zoomScale > 1.f ? 1 : maxZoomScale;
+{   CGFloat zoomScale = self.scrollView.zoomScale > 1.f ? 1 : self.scrollView.maximumZoomScale;
 
     CGPoint center = [recognizer locationInView:self];
     if (zoomScale <= 1.f) {

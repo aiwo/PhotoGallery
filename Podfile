@@ -7,6 +7,4 @@ pod 'SDWebImage'
 pod 'CocoaLumberjack'
 pod 'Masonry'
 pod 'ReactiveCocoa'
-pod 'UIView+TKGeometry', '~> 0.2'
-pod 'FSImageViewer', '~> 2.6'
 

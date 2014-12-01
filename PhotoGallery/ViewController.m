@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 #import "Router.h"
-#import <FSBasicImage.h>
-#import <FSBasicImageSource.h>
 #import "UIFont+MeduzaFonts.h"
 #import "PageViewController.h"
 
@@ -38,10 +36,7 @@
                         @"http://www.aegmaha.ee/files/200807/images/large/vJxzYlmhSsa.jpg"];
     
     UIViewController *controller = [Router instantiateGalleryControllerWithPhotos:photos];
-    PageViewController *pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([PageViewController class])];
-    pageViewController.photos = photos;
-    [self.navigationController pushViewController:pageViewController animated:YES];
-//    [self.navigationController presentViewController:pageViewController animated:YES completion:nil];
+    [self.navigationController presentViewController:controller animated:YES completion:nil];
 }
 
 @end

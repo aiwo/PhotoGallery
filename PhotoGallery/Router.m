@@ -7,7 +7,7 @@
 //
 
 #import "Router.h"
-#import "GalleryController.h"
+#import "PageViewController.h"
 
 #define MainStoryboard [UIStoryboard storyboardWithName:@"Main" bundle:nil]
 
@@ -20,7 +20,7 @@
 
 + (UIViewController *)instantiateGalleryControllerWithPhotos:(NSArray *)photos
 {
-    GalleryController *controller = (GalleryController *)[self instantiateControllerOfClass:[GalleryController class]];
+    PageViewController *controller = (PageViewController *)[self instantiateControllerOfClass:[PageViewController class]];
     controller.photos = photos;
     return controller;
 }

@@ -14,7 +14,6 @@
 		DAB889151A2518BB00A7154E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB889131A2518BB00A7154E /* Main.storyboard */; };
 		DAB889171A2518BB00A7154E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB889161A2518BB00A7154E /* Images.xcassets */; };
 		DAB8891A1A2518BB00A7154E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB889181A2518BB00A7154E /* LaunchScreen.xib */; };
-		DAB889311A251A8F00A7154E /* GalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB889301A251A8F00A7154E /* GalleryController.m */; };
 		DAB889341A251ABA00A7154E /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB889331A251ABA00A7154E /* Router.m */; };
 		DAB889371A251EB900A7154E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB889361A251EB900A7154E /* NavigationController.m */; };
 		DAB889391A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB889381A25206400A7154E /* PFRegalTextPro-RegularB_35471.ttf */; };
@@ -39,8 +38,6 @@
 		DAB889141A2518BB00A7154E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAB889161A2518BB00A7154E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DAB889191A2518BB00A7154E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		DAB8892F1A251A8F00A7154E /* GalleryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryController.h; sourceTree = "<group>"; };
-		DAB889301A251A8F00A7154E /* GalleryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryController.m; sourceTree = "<group>"; };
 		DAB889321A251ABA00A7154E /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		DAB889331A251ABA00A7154E /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
 		DAB889351A251EB900A7154E /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
@@ -137,8 +134,6 @@
 		DAB889501A2669EB00A7154E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DAB8892F1A251A8F00A7154E /* GalleryController.h */,
-				DAB889301A251A8F00A7154E /* GalleryController.m */,
 				DAB889101A2518BB00A7154E /* ViewController.h */,
 				DAB889111A2518BB00A7154E /* ViewController.m */,
 				DAB889351A251EB900A7154E /* NavigationController.h */,
@@ -274,7 +269,6 @@
 				DAD07B761A2BA48600334677 /* MyScrollView.m in Sources */,
 				DAD07B791A2BB6A300334677 /* PageViewController.m in Sources */,
 				DAB8890F1A2518BB00A7154E /* AppDelegate.m in Sources */,
-				DAB889311A251A8F00A7154E /* GalleryController.m in Sources */,
 				DAB889371A251EB900A7154E /* NavigationController.m in Sources */,
 				DAB8894C1A2536AA00A7154E /* ZoomableImageView.m in Sources */,
 				DAB8890C1A2518BB00A7154E /* main.m in Sources */,
