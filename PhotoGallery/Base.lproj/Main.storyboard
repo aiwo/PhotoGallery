@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P1N-BK-CGM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P1N-BK-CGM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -128,15 +128,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="5ax-As-Z1B">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="5ax-As-Z1B">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2RR-X3-VGY">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="568" translatesAutoresizingMaskIntoConstraints="NO" id="2RR-X3-VGY">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <color key="backgroundColor" red="0.92549019610000005" green="0.20000000000000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2RR-X3-VGY" secondAttribute="trailing" constant="-1" id="FHc-UB-haq"/>
+                                    <constraint firstItem="2RR-X3-VGY" firstAttribute="top" secondItem="5ax-As-Z1B" secondAttribute="top" id="Id9-dB-8ai"/>
+                                    <constraint firstAttribute="bottom" secondItem="2RR-X3-VGY" secondAttribute="bottom" constant="-1" id="md9-N6-ut0"/>
+                                    <constraint firstItem="2RR-X3-VGY" firstAttribute="leading" secondItem="5ax-As-Z1B" secondAttribute="leading" id="vem-au-HCi"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -149,6 +155,10 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="constraintBottom" destination="md9-N6-ut0" id="i4B-iQ-k5u"/>
+                        <outlet property="constraintLeft" destination="vem-au-HCi" id="J5w-3O-Uf6"/>
+                        <outlet property="constraintRight" destination="FHc-UB-haq" id="xjz-L4-HSs"/>
+                        <outlet property="constraintTop" destination="Id9-dB-8ai" id="NKR-4h-UYT"/>
                         <outlet property="imageView" destination="2RR-X3-VGY" id="tnf-6G-RT2"/>
                         <outlet property="scrollView" destination="5ax-As-Z1B" id="jja-dk-CER"/>
                     </connections>

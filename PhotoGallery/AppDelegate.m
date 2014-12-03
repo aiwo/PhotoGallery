@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <CocoaLumberjack/DDLog.h>
 
 @interface AppDelegate ()
 

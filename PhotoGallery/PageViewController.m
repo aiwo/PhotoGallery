@@ -19,6 +19,7 @@
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @property (nonatomic, strong) NSArray *photoURLs;
 @property (nonatomic, strong) NSNumber *currentPhotoIndex;
+@property (nonatomic, assign) BOOL buttonsHidden;
 
 @end
 
@@ -51,9 +52,16 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+}
+
+#pragma marl - RAC
 
 - (void)configureSignals
 {
@@ -64,12 +72,8 @@
     }];
     
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIDeviceOrientationDidChangeNotification object:0] subscribeNext:^(id x) {
-        [UIView animateWithDuration:0.3f animations:^{
-            BOOL showButtons = [UIDevice currentDevice].orientation == UIDeviceOrientationPortrait;
-            self.closeButton.alpha =
-            self.shareButton.alpha =
-            self.photoIndexLabel.alpha = showButtons;
-        }];
+        BOOL hideButtons = UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation);
+        [self setButtonsHidden:hideButtons];
     }];
 }
 
@@ -82,6 +86,17 @@
         [array addObject:url];
     }
     self.photoURLs = array;
+}
+
+- (void)setButtonsHidden:(BOOL)buttonsHidden
+{
+    _buttonsHidden = buttonsHidden;
+    
+    [UIView animateWithDuration:0.15f animations:^{
+        self.closeButton.alpha =
+        self.shareButton.alpha =
+        self.photoIndexLabel.alpha = !buttonsHidden;
+    }];
 }
 
 #pragma mark - UIPageViewControllerDataSource
@@ -108,6 +123,9 @@
     NSURL *url = self.photoURLs[index];
     ZoomableImageViewController *controller = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:NSStringFromClass([ZoomableImageViewController class])];
     controller.photoUrl = url;
+    controller.singleTapHandler = ^() {
+        self.buttonsHidden = !self.buttonsHidden;
+    };
     
     return controller;
 }
@@ -132,6 +150,13 @@
     } else {
         [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
     }
+}
+
+#pragma mark - Interface Orientation
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscape;
 }
 
 @end

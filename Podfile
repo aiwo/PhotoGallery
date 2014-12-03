@@ -4,7 +4,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'SDWebImage'
-pod 'CocoaLumberjack'
 pod 'Masonry'
 pod 'ReactiveCocoa'
-

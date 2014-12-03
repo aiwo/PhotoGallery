@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) NSURL *photoUrl;
 @property (nonatomic, assign) NSInteger index;
+@property (nonatomic, copy) void (^singleTapHandler)();
 
 @end
